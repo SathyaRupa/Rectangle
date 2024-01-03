@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class RectangleTest {
     @Test
-    void shouldReturnTwentyFourWhenTheLenghtAndBreadthAreSixAndFour(){
+    void shouldReturnAreaof24WhenTheLengthIs6AndBreadthIs4(){
         int length = 6;
         int breadth = 4;
         int expected = 24;
