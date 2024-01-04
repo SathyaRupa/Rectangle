@@ -1,21 +1,20 @@
 package com.thoughtworks.rectangle;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 import org.junit.jupiter.api.Test;
 
 public class RectangleTest {
     @Test
-    void shouldReturnAreaof24WhenTheLengthIs6AndBreadthIs4(){
+    void shouldReturnAreaOf24WhenTheLengthIs6AndBreadthIs4(){
         int length = 6;
         int breadth = 4;
         int expected = 24;
 
         Rectangle rectangle = new Rectangle();
 
-        int area = rectangle.area(length,breadth);
-
-        assertEquals(expected,rectangle.area(length,breadth));
+        assertThat(rectangle.area(length,breadth), equalTo(expected));
 
     }
 }
