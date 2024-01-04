@@ -2,12 +2,16 @@ package com.thoughtworks.rectangle;
 
 public class Rectangle {
 
-    public int area(int length, int breadth) {
-        return length*breadth;
+    private final double length;
+    private final double breadth;
+
+    public Rectangle(double length,double breadth){
+        this.length = length;
+        this.breadth = breadth;
     }
 
-    public static void main(String[] args) {
-        
+    public double area() {
+        return length*breadth;
     }
     
 }
